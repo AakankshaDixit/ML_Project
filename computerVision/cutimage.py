@@ -1,13 +1,12 @@
+#!/usr/bin/python3
+
 import cv2
 
+# for reading the image
 img =cv2.imread('panda.jpg')
 
 image=img[0:450,0:800]
 newimg=img[0:225,0:400]
-#newimg1 = img[225:450 ,400:800]
-h=450/2
-w=800
-
 
 print("enter your choice:")
 print("1.cut in half")
@@ -52,7 +51,7 @@ if choice == '3':
 else:
 	print("Wrong choice!!")
 
-
+#for displaying the image
 cv2.imshow('panda img',image)
 
 cv2.waitKey(0)
